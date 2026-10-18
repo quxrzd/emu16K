@@ -1,0 +1,26 @@
+               _  __ _  __
+ ___ _ __ _  _/ |/ /| |/ /
+/ -_) '  \ || | / _ \ ' < 
+\___|_|_|_\_,_|_\___/_|\_\
+
+the cycle-accurate rzd16K
+reference emulator.
+
+<http://www.github.com/quxrzd/er1600>
+
+=====================================
+
+## ABOUT
+========
+emu16K is the reference emulator for the rezoid rzd16K
+processor, written in C++. it attempts to be cycle-accurate
+and true to its design.
+
+## COMPILING
+============
+to be determined.
+
+## LICENSE
+==========
+custom public domain waiver.
+see the "PUBLIC" file for more information.
