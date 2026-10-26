@@ -6,19 +6,24 @@
 the cycle-accurate rzd16K
 reference emulator.
 
-<http://www.github.com/quxrzd/er1600>
+<http://www.github.com/quxrzd/emu16K>
 
 =====================================
 
 ## ABOUT
 ========
 emu16K is the reference emulator for the rezoid rzd16K
-processor, written in C++. it attempts to be cycle-accurate
-and true to its design.
+processor, written in C++03. it attempts to be
+cycle-accurate and accurate to the rzd16K specification.
 
 ## COMPILING
 ============
-to be determined.
+on a unix-like machine, simply run:
+$ make -f mkf
+to compile and run the executable, run:
+$ make -f mkf run
+to remove the executable, run:
+$ make -f mkf clr
 
 ## LICENSE
 ==========

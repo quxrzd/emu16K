@@ -1,0 +1,30 @@
+## mkf
+## written by rezoid.
+
+## emu16K is dedicated to the public domain.
+## attribution appreciated; not required.
+
+
+C++ = g++
+FLG = -std=c++03
+SRC = src/emu.c++ 				\
+		src/emu16K/emu16K.c++
+OUT = bin/emu16K
+
+.DEFAULT_GOAL = run
+.PHONY: ini all run clr
+
+
+ini:
+	@mkdir -p bin
+	@rm -f $(OUT)
+
+all:	ini
+	@$(C++) $(FLG) $(SRC) -o $(OUT)
+	
+run:	all
+	@./$(OUT)
+	@echo ""
+	
+clr:
+	@rm -rf bin/
