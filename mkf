@@ -5,8 +5,13 @@
 ## attribution appreciated; not required.
 
 
+## to build: 	"$ make -f mkf".
+## to execute:	"$ make -f mkf run".
+## to clean:	"$ make -f mfk clr". 
+
+
 C++ = g++
-FLG = -std=c++03
+FLG = -std=c++03 -O0
 SRC = src/emu.c++ 				\
 		src/emu16K/emu16K.c++
 OUT = bin/emu16K
@@ -24,7 +29,6 @@ all:	ini
 	
 run:	all
 	@./$(OUT)
-	@echo ""
 	
 clr:
 	@rm -rf bin/

@@ -14,18 +14,19 @@ reference emulator.
 ========
 emu16K is the reference emulator for the rezoid rzd16K
 processor, written in C++03. it attempts to be
-cycle-accurate and accurate to the rzd16K specification.
+cycle-accurate and in the style of the MOS 6502 emulator
+"fake6502", of which was written by Mike Chambers.
 
 ## COMPILING
 ============
-on a unix-like machine, simply run:
+to compile, run:
 $ make -f mkf
-to compile and run the executable, run:
+to compile and run the created executable, run:
 $ make -f mkf run
 to remove the executable, run:
 $ make -f mkf clr
 
 ## LICENSE
 ==========
-custom public domain waiver.
+the rezoid public domain waiver.
 see the "PUBLIC" file for more information.
