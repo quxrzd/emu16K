@@ -16,7 +16,8 @@
 #include <stdio.h>
 #include "emu16K/emu16K.h++"
 
-u08 men [MAX_U16] = {0x00};
+u08 men [MAX_u16] = {0x00};
+
 
 // main function ==========================================
 int main ()
@@ -25,24 +26,24 @@ int main ()
    bit c = 0;
 
    emu16K rzd16K (s);
+   s = (s >> 4) & 0x0F;
 
-   // checks if types are equal to correct widths.
-   if ((s & (1 << 4)) != 0)
+   if (bitpos_u08 (s, 0))
    {
       puts ("!! \"bit\": type does not equal 8 bits.");
       c = 1;
    }
-   if ((s & (1 << 5)) != 0)
+   if (bitpos_u08 (s, 1))
    {
       puts ("!! \"u08\": type does not equal 8 bits.");
       c = 1;
    }
-   if ((s & (1 << 6)) != 0)
+   if (bitpos_u08 (s, 2))
    {
       puts ("!! \"u16\": type does not equal 16 bits.");
       c = 1;
    }
-   if ((s & (1 << 7)) != 0)
+   if (bitpos_u08 (s, 3))
    {
       puts ("!! \"u32\": type does not equal 32 bits.");
       c = 1;

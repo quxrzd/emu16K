@@ -21,19 +21,19 @@ u08 emu16K::chkint ()
 {
    u08 status = 0b0000;
 
-   if (sizeof(bit) * 8 != 8)
+   if (sizeof (bit) * 8 != 8)
    {
       status = status | (1 << 4);
    }
-   if (sizeof(u08) * 8 != 8)
+   if (sizeof (u08) * 8 != 8)
    {
       status = status | (1 << 5);
    }
-   if (sizeof(u16) * 8 != 16)
+   if (sizeof (u16) * 8 != 16)
    {
       status = status | (1 << 6);
    }
-   if (sizeof(u32) * 8 != 32)
+   if (sizeof (u32) * 8 != 32)
    {
       status = status | (1 << 7);
    }
